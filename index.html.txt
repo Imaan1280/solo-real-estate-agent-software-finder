@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Solo Real Estate Agent Software Finder | Free Tool Matcher</title>
+
+  <meta
+    name="description"
+    content="Use the free solo real estate agent software finder to match CRM, automation, transaction, and marketing tools based on your goals and budget."
+  />
+
+  <meta
+    name="robots"
+    content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+  />
+
+  <meta name="author" content="Solo Real Estate Agent Software Finder" />
+
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/YOUR-REPO/" />
+
+  <meta name="theme-color" content="#0f172a" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Solo Real Estate Agent Software Finder" />
+  <meta property="og:title" content="Solo Real Estate Agent Software Finder | Free Tool Matcher" />
+  <meta
+    property="og:description"
+    content="Answer quick questions and get a software category match for your real estate business. Free, fast, and no signup."
+  />
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/YOUR-REPO/" />
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Solo Real Estate Agent Software Finder | Free Tool Matcher" />
+  <meta
+    name="twitter:description"
+    content="Free software finder for solo real estate agents. Match CRM, automation, transaction, and marketing tools."
+  />
+  <meta name="twitter:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/og-image.png" />
+
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%8F%A0%3C/text%3E%3C/svg%3E"
+  />
+
+  <link rel="sitemap" type="application/xml" href="https://YOUR-USERNAME.github.io/YOUR-REPO/sitemap.xml" />
+
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" href="script.js" as="script" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://YOUR-USERNAME.github.io/YOUR-REPO/#app",
+        "name": "Solo Real Estate Agent Software Finder",
+        "url": "https://YOUR-USERNAME.github.io/YOUR-REPO/",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any",
+        "description": "Free one-page software finder for solo real estate agents. Match CRM, lead follow-up automation, transaction management, and marketing tools based on your goals and budget.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "Real estate CRM matcher",
+          "Lead follow-up automation recommendations",
+          "Transaction management software suggestions",
+          "Listing marketing tool ideas"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://YOUR-USERNAME.github.io/YOUR-REPO/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Solo Real Estate Agent Software Finder",
+            "item": "https://YOUR-USERNAME.github.io/YOUR-REPO/"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://YOUR-USERNAME.github.io/YOUR-REPO/#branch-guides",
+        "name": "Real estate software branch guides",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Best CRM for New Real Estate Agents",
+            "url": "https://YOUR-USERNAME.github.io/YOUR-REPO/branches/best-crm-for-new-real-estate-agents.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Best Automation Tools for Real Estate Agents",
+            "url": "https://YOUR-USERNAME.github.io/YOUR-REPO/branches/best-automation-tools-for-real-estate-agents.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Best Marketing Tools for Solo Real Estate Agents",
+            "url": "https://YOUR-USERNAME.github.io/YOUR-REPO/branches/best-marketing-tools-for-solo-real-estate-agents.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://YOUR-USERNAME.github.io/YOUR-REPO/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is this solo real estate software finder free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The software finder is free to use and does not require payment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to enter my email address?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The tool does not ask for your name, email address, phone number, or other personal information."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best CRM for a solo real estate agent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The best CRM depends on your budget and lead volume. Many solo agents start with a simple CRM that can store contacts, track leads, and send follow-up reminders."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should a new real estate agent buy expensive software?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually no. New solo agents should usually start with low-cost or free tools until they have a consistent lead flow and closing process."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#main">Solo Agent Software Finder</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#finder">Finder</a>
+        <a href="#branches">Branch Guides</a>
+        <a href="#categories">Categories</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+
+    <div class="container hero">
+      <p class="eyebrow">Free real estate software matcher</p>
+
+      <h1>Solo Real Estate Agent Software Finder</h1>
+
+      <p class="subtitle">
+        Find the best CRM, lead follow-up, transaction management, and
+        marketing software for solo real estate agents. Answer quick questions
+        and get a category match.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button" href="#finder">Find my software match</a>
+        <a class="button secondary" href="#branches">Browse branch guides</a>
+      </div>
+
+      <ul class="trust-list">
+        <li>100% free</li>
+        <li>No signup</li>
+        <li>No external APIs</li>
+        <li>Mobile friendly</li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+
+      <div class="ad-slot" data-ad-position="top">
+        <!-- Later: paste your ad network code here. -->
+        <span>Advertisement placeholder</span>
+      </div>
+
+      <section id="finder" class="card quiz-card" aria-label="Real estate software finder">
+        <div id="start-screen">
+          <h2>Real estate software finder</h2>
+          <p>
+            This free tool helps solo real estate agents choose the right
+            software category based on their business type, main goal, and
+            budget.
+          </p>
+          <button id="start-btn" type="button">Start the finder</button>
+        </div>
+
+        <div id="question-screen" hidden>
+          <p id="progress" class="progress"></p>
+          <h2 id="question-title"></h2>
+          <div id="answers" class="answers"></div>
+        </div>
+
+        <div id="result-screen" hidden>
+          <div id="result" aria-live="polite"></div>
+          <button id="restart-btn" type="button" class="secondary">
+            Start over
+          </button>
+        </div>
+      </section>
+
+      <noscript>
+        <div class="card">
+          <h2>JavaScript required</h2>
+          <p>
+            The interactive finder requires JavaScript. Please enable
+            JavaScript or read the software branch guides below.
+          </p>
+        </div>
+      </noscript>
+
+      <section id="branches" class="content">
+        <h2>Real estate software branch guides</h2>
+        <p>
+          These branch pages target specific software needs for real estate
+          agents. Each guide links back to the main finder tool.
+        </p>
+
+        <div class="grid">
+          <a class="mini-card branch-card" href="branches/best-crm-for-new-real-estate-agents.html">
+            <h3>Best CRM for New Real Estate Agents</h3>
+            <p>
+              Learn what new agents should prioritize when choosing their
+              first CRM: lead storage, follow-up reminders, and simplicity.
+            </p>
+          </a>
+
+          <a class="mini-card branch-card" href="branches/best-automation-tools-for-real-estate-agents.html">
+            <h3>Best Automation Tools for Real Estate Agents</h3>
+            <p>
+              See how automation can speed up lead response, appointment
+              reminders, and follow-up sequences.
+            </p>
+          </a>
+
+          <a class="mini-card branch-card" href="branches/best-marketing-tools-for-solo-real-estate-agents.html">
+            <h3>Best Marketing Tools for Solo Real Estate Agents</h3>
+            <p>
+              Find simple tools for listing graphics, short-form video, email
+              newsletters, and personal branding.
+            </p>
+          </a>
+        </div>
+
+        <p>
+          <a href="branches/index.html">View all branch guides</a>
+        </p>
+      </section>
+
+      <section id="categories" class="content">
+        <h2>Software categories for solo real estate agents</h2>
+
+        <div class="grid">
+          <article class="mini-card">
+            <h3>Real estate CRM and lead management</h3>
+            <p>
+              Best for agents who need to store buyer and seller leads, track
+              conversations, organize contacts, and avoid losing follow-up
+              opportunities.
+            </p>
+          </article>
+
+          <article class="mini-card">
+            <h3>Lead follow-up and automation</h3>
+            <p>
+              Best for agents who already receive leads but need faster
+              response times, automated reminders, email sequences, and
+              workflow automation.
+            </p>
+          </article>
+
+          <article class="mini-card">
+            <h3>Transaction and compliance management</h3>
+            <p>
+              Best for agents who need help managing contracts, deadlines,
+              documents, broker requirements, and transaction stages.
+            </p>
+          </article>
+
+          <article class="mini-card">
+            <h3>Listing marketing and content creation</h3>
+            <p>
+              Best for agents who want to promote listings, create social
+              media content, build a personal brand, and improve property
+              marketing.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="content">
+        <h2>Solo real estate software finder FAQ</h2>
+
+        <details>
+          <summary>Is this solo real estate software finder free?</summary>
+          <p>
+            Yes. The software finder is free to use and does not require
+            payment.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do I need to enter my email address?</summary>
+          <p>
+            No. The tool does not ask for your name, email address, phone
+            number, or other personal information.
+          </p>
+        </details>
+
+        <details>
+          <summary>What is the best CRM for a solo real estate agent?</summary>
+          <p>
+            The best CRM depends on your budget and lead volume. Many solo
+            agents start with a simple CRM that can store contacts, track
+            leads, and send follow-up reminders.
+          </p>
+        </details>
+
+        <details>
+          <summary>Should a new real estate agent buy expensive software?</summary>
+          <p>
+            Usually no. New solo agents should usually start with low-cost or
+            free tools until they have a consistent lead flow and closing
+            process.
+          </p>
+        </details>
+      </section>
+
+      <div class="ad-slot" data-ad-position="bottom">
+        <!-- Later: paste your ad network code here. -->
+        <span>Advertisement placeholder</span>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        © <span id="year"></span> Solo Real Estate Agent Software Finder. For
+        educational purposes only.
+      </p>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#finder">Finder</a>
+        <a href="branches/index.html">Branch Guides</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

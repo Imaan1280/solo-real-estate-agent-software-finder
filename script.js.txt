@@ -1,0 +1,371 @@
+const questions = [
+  {
+    id: "agentType",
+    title: "What best describes your real estate situation?",
+    answers: [
+      {
+        label: "I am a solo agent",
+        scores: {
+          crm: 3,
+          automation: 2,
+          transaction: 1,
+          marketing: 1
+        }
+      },
+      {
+        label: "I am a new agent building my first pipeline",
+        scores: {
+          crm: 3,
+          automation: 2,
+          marketing: 2
+        }
+      },
+      {
+        label: "I run a small team or boutique brokerage",
+        scores: {
+          transaction: 3,
+          crm: 2,
+          automation: 2
+        }
+      },
+      {
+        label: "I focus on investor or rental deals",
+        scores: {
+          crm: 2,
+          transaction: 2,
+          automation: 2,
+          marketing: 1
+        }
+      }
+    ]
+  },
+  {
+    id: "goal",
+    title: "What is your biggest priority right now?",
+    answers: [
+      {
+        label: "Get and convert more buyer/seller leads",
+        scores: {
+          crm: 3,
+          automation: 1
+        }
+      },
+      {
+        label: "Follow up faster with leads and appointments",
+        scores: {
+          automation: 3,
+          crm: 1
+        }
+      },
+      {
+        label: "Manage contracts, deadlines, and compliance",
+        scores: {
+          transaction: 3
+        }
+      },
+      {
+        label: "Market listings and build my personal brand",
+        scores: {
+          marketing: 3
+        }
+      }
+    ]
+  },
+  {
+    id: "budget",
+    title: "What is your monthly software budget?",
+    answers: [
+      {
+        label: "Under $50/month",
+        scores: {}
+      },
+      {
+        label: "$50 to $200/month",
+        scores: {}
+      },
+      {
+        label: "$200+/month",
+        scores: {}
+      }
+    ]
+  }
+];
+
+const results = {
+  crm: {
+    title: "Your best match: Real Estate CRM / Lead Management",
+    summary:
+      "Your answers suggest that your first priority should be capturing leads, organizing contacts, and following up consistently. A CRM can help solo agents stop losing potential buyers and sellers.",
+    tools: [
+      {
+        name: "HubSpot Free CRM",
+        why: "Good for beginners who want a free starting point."
+      },
+      {
+        name: "Zoho CRM",
+        why: "Good for affordable small-business sales management."
+      },
+      {
+        name: "Follow Up Boss",
+        why: "Popular in real estate lead management, but research pricing first."
+      }
+    ],
+    nextSteps: [
+      "List where your leads come from: referrals, portals, social media, calls, or open houses.",
+      "Create labels for buyer leads, seller leads, past clients, and warm contacts.",
+      "Set a daily follow-up routine.",
+      "Compare 2 or 3 CRM tools before paying."
+    ]
+  },
+
+  automation: {
+    title: "Your best match: Lead Follow-Up / Automation Stack",
+    summary:
+      "Your answers suggest you should focus on faster follow-up, reminders, automated messages, and workflows. Speed is critical in real estate lead conversion.",
+    tools: [
+      {
+        name: "Zapier",
+        why: "Good for connecting apps and automating simple workflows."
+      },
+      {
+        name: "Make",
+        why: "Good for visual automation workflows."
+      },
+      {
+        name: "ActiveCampaign",
+        why: "Good for email automation and lead nurturing."
+      }
+    ],
+    nextSteps: [
+      "Identify the slowest part of your lead response process.",
+      "Create a quick-response message template.",
+      "Automate appointment reminders and follow-up emails.",
+      "Test one automation before adding more."
+    ]
+  },
+
+  transaction: {
+    title: "Your best match: Transaction / Compliance Management",
+    summary:
+      "Your answers suggest you need better control over contracts, deadlines, documents, and transaction stages. This is important if paperwork is slowing you down or increasing risk.",
+    tools: [
+      {
+        name: "Dotloop",
+        why: "Common for real estate transaction management."
+      },
+      {
+        name: "SkySlope",
+        why: "Used for transaction and compliance workflows."
+      },
+      {
+        name: "DocuSign",
+        why: "Good for electronic signatures and document workflows."
+      }
+    ],
+    nextSteps: [
+      "Create a checklist for every deal stage.",
+      "Centralize contracts and deadlines.",
+      "Set automatic reminders for important dates.",
+      "Check what your broker requires before buying software."
+    ]
+  },
+
+  marketing: {
+    title: "Your best match: Listing Marketing / Content Stack",
+    summary:
+      "Your answers suggest you should focus on marketing listings, building your personal brand, and creating content that attracts buyers or sellers.",
+    tools: [
+      {
+        name: "Canva",
+        why: "Good for listing graphics, flyers, and social posts."
+      },
+      {
+        name: "CapCut",
+        why: "Good for short-form property videos."
+      },
+      {
+        name: "Mailchimp",
+        why: "Good for email newsletters and simple campaigns."
+      }
+    ],
+    nextSteps: [
+      "Create one repeatable listing promotion template.",
+      "Publish property content on at least one platform consistently.",
+      "Use one design tool and one video tool to keep it simple.",
+      "Track which posts bring inquiries or showings."
+    ]
+  }
+};
+
+const budgetNotes = {
+  "Under $50/month":
+    "Budget note: Start with free or low-cost tools. Avoid paying for advanced features until you have a consistent lead flow.",
+
+  "$50 to $200/month":
+    "Budget note: You can test paid tools, but start with one core tool first. Do not buy multiple subscriptions too early.",
+
+  "$200+/month":
+    "Budget note: You can invest in stronger tools, but make sure each tool connects to a clear goal such as more leads, faster follow-up, smoother transactions, or better marketing."
+};
+
+const state = {
+  current: 0,
+  scores: {
+    crm: 0,
+    automation: 0,
+    transaction: 0,
+    marketing: 0
+  },
+  budget: ""
+};
+
+const elements = {
+  startScreen: document.getElementById("start-screen"),
+  questionScreen: document.getElementById("question-screen"),
+  resultScreen: document.getElementById("result-screen"),
+  startBtn: document.getElementById("start-btn"),
+  restartBtn: document.getElementById("restart-btn"),
+  questionTitle: document.getElementById("question-title"),
+  answers: document.getElementById("answers"),
+  progress: document.getElementById("progress"),
+  result: document.getElementById("result"),
+  year: document.getElementById("year")
+};
+
+if (elements.year) {
+  elements.year.textContent = new Date().getFullYear();
+}
+
+elements.startBtn.addEventListener("click", startQuiz);
+elements.restartBtn.addEventListener("click", restartQuiz);
+
+function startQuiz() {
+  state.current = 0;
+  state.scores = {
+    crm: 0,
+    automation: 0,
+    transaction: 0,
+    marketing: 0
+  };
+  state.budget = "";
+
+  elements.startScreen.hidden = true;
+  elements.resultScreen.hidden = true;
+  elements.questionScreen.hidden = false;
+
+  showQuestion();
+}
+
+function restartQuiz() {
+  startQuiz();
+}
+
+function showQuestion() {
+  const question = questions[state.current];
+
+  elements.progress.textContent = `Question ${state.current + 1} of ${
+    questions.length
+  }`;
+
+  elements.questionTitle.textContent = question.title;
+  elements.answers.innerHTML = "";
+
+  question.answers.forEach((answer) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "answer";
+    button.textContent = answer.label;
+
+    button.addEventListener("click", () => {
+      selectAnswer(answer);
+    });
+
+    elements.answers.appendChild(button);
+  });
+}
+
+function selectAnswer(answer) {
+  if (state.current === questions.length - 1) {
+    state.budget = answer.label;
+  }
+
+  Object.entries(answer.scores || {}).forEach(([category, points]) => {
+    state.scores[category] = (state.scores[category] || 0) + points;
+  });
+
+  state.current += 1;
+
+  if (state.current < questions.length) {
+    showQuestion();
+  } else {
+    showResult();
+  }
+}
+
+function getWinner() {
+  return Object.entries(state.scores).sort((a, b) => b[1] - a[1])[0][0];
+}
+
+function showResult() {
+  const winner = getWinner();
+  const result = results[winner];
+  const budgetNote = budgetNotes[state.budget] || "";
+
+  elements.result.innerHTML = "";
+
+  const title = document.createElement("h3");
+  title.textContent = result.title;
+
+  const summary = document.createElement("p");
+  summary.textContent = result.summary;
+
+  const budget = document.createElement("p");
+  budget.className = "budget-note";
+  budget.textContent = budgetNote;
+
+  const toolHeading = document.createElement("h4");
+  toolHeading.textContent = "Examples to research";
+
+  const toolList = document.createElement("ul");
+
+  result.tools.forEach((tool) => {
+    const li = document.createElement("li");
+
+    const strong = document.createElement("strong");
+    strong.textContent = tool.name;
+
+    const span = document.createElement("span");
+    span.textContent = ` - ${tool.why}`;
+
+    li.appendChild(strong);
+    li.appendChild(span);
+    toolList.appendChild(li);
+  });
+
+  const stepsHeading = document.createElement("h4");
+  stepsHeading.textContent = "Next steps";
+
+  const stepsList = document.createElement("ol");
+
+  result.nextSteps.forEach((step) => {
+    const li = document.createElement("li");
+    li.textContent = step;
+    stepsList.appendChild(li);
+  });
+
+  const adPlaceholder = document.createElement("div");
+  adPlaceholder.className = "ad-slot result-ad";
+  adPlaceholder.textContent = "Advertisement placeholder";
+
+  elements.result.appendChild(title);
+  elements.result.appendChild(summary);
+  elements.result.appendChild(budget);
+  elements.result.appendChild(toolHeading);
+  elements.result.appendChild(toolList);
+  elements.result.appendChild(stepsHeading);
+  elements.result.appendChild(stepsList);
+  elements.result.appendChild(adPlaceholder);
+
+  elements.questionScreen.hidden = true;
+  elements.resultScreen.hidden = false;
+}
